@@ -1,0 +1,32 @@
+.plan-container {
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  width: 220px;
+  text-align: center;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+/* Normal plan */
+.plan-normal {
+  border: 2px solid #ccc;
+}
+
+/* Popular / Recommended plan */
+.plan-popular {
+  border: 3px solid #007bff;
+  background-color: #f0f7ff;
+  box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3);
+  transform: scale(1.05);
+}
+
+.popular-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}

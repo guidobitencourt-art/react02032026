@@ -1,33 +1,30 @@
-import React from "react";
-import "./StockBadge.css";
+import './StockBadge.css'
 
-interface StockBadgeProps {
-  productName: string;
-  cantidad: number;
+interface StockProps{
+    productName: string;
+    quantity: number;
 }
 
-const StockBadge: React.FC<StockBadgeProps> = ({ productName, cantidad }) => {
-  let clase = "";
-  let mensaje = "";
+const StockBadge = (props: StockProps) => {
+    let classState = "normal"
+    let message = `Stock: ${props.quantity}`
 
-  if (cantidad === 0) {
-    clase = "agotado";
-    mensaje = "Agotado";
-  } else if (cantidad > 0 && cantidad <= 10) {
-    clase = "critico";
-    mensaje = "¡Últimas unidades!";
-  } else {
-    clase = "normal";
-    mensaje = "Disponible";
-  }
+    if (props.quantity === 0){
+        classState = "sold-out"
+        message = "Producto Agotado"
+    }else if(props.quantity <= 10){
+        classState = "critical"
+        message = `!Solo quedan ${props.quantity}`
+    }
+
+
 
   return (
-    <div className={`stock-badge ${clase}`}>
-      <h3>{productName}</h3>
-      <p>{mensaje}</p>
-      {cantidad > 0 && <span>Stock: {cantidad}</span>}
+    <div className={`badge-container ${classState}`}>
+        <strong>{props.productName}</strong>
+        <p>{message}</p>
     </div>
-  );
-};
+  )
+}
 
-export default StockBadge;
+export default StockBadge

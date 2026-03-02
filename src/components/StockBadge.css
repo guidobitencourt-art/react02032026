@@ -1,27 +1,23 @@
-.stock-badge {
-  padding: 12px;
-  border-radius: 8px;
-  width: 220px;
-  margin: 10px 0;
-  font-family: Arial, sans-serif;
+.badge-container {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-family: sans-serif;
 }
 
-/* Stock agotado */
-.agotado {
-  background-color: #ccc;
-  color: #555;
-  text-decoration: line-through;
+.sold-out{
+    background-color: #e0e0e0;
+    color: #9e9e9e;
+    text-decoration: line-through;
 }
 
-/* Stock crítico */
-.critico {
-  background-color: orange;
-  color: white;
-  font-weight: bold;
+.critical {
+    background-color: #fff3e0;
+    border-color: #ff9800;
+    color: #e65100;
 }
 
-/* Stock normal */
 .normal {
-  background-color: #007bff;
-  color: white;
+    background-color: #ffffff;
 }
