@@ -1,0 +1,33 @@
+/* Estilo Base */
+
+.server-card{
+    border: 3px solid;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+/* Estilo Online */
+
+.status-online {
+    border-color: #4CAF50;      
+    background-color: #E8F5E9;
+    color: #2e7d23;
+
+}
+
+/* Estilo Offline */
+
+.status-offline {
+    border-color: #F44336;      
+    background-color: #FFEBEE;
+    color: #c62828;
+}
+
+.inidicador {
+   font-weight: bold;
+   text
+}

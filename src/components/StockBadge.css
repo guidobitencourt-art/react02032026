@@ -1,0 +1,27 @@
+.stock-badge {
+  padding: 12px;
+  border-radius: 8px;
+  width: 220px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Stock agotado */
+.agotado {
+  background-color: #ccc;
+  color: #555;
+  text-decoration: line-through;
+}
+
+/* Stock crítico */
+.critico {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+}
+
+/* Stock normal */
+.normal {
+  background-color: #007bff;
+  color: white;
+}
