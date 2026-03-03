@@ -1,7 +1,7 @@
 import './App.css'
-import StockBadge from './components/StockBadge/StockBadge'
-import PlanCard from './components/PlanCard/PlanCard'
-import Notification from "./components/Notification/Notification"
+// import StockBadge from './components/StockBadge/StockBadge'
+// import PlanCard from './components/PlanCard/PlanCard'
+// import Notification from "./components/Notificacion/Notificacion"
 
 
 
@@ -23,28 +23,32 @@ import Notification from "./components/Notification/Notification"
 
 
 
+
+// function App() {
+
+//   return (
+//     <>
+//   <Notification type='success' message='Usuario Creado' />
+//   <Notification type='alert' message='No hay gasolina' />
+//   <Notification type='error' message='No se pudo guardar en la base de datos' />
+//     </>
+//   )
+// }
+
+// export default App
+
+
+
+import Counter from './components/Counter/Counter'
+
+
 function App() {
+
   return (
-    <div className="flex flex-col gap-4 p-10">
-
-      <Notification 
-        type="success" 
-        message="Operation completed successfully!" 
-      />
-
-      <Notification 
-        type="warning" 
-        message="Be careful! Check your data before continuing." 
-      />
-
-      <Notification 
-        type="error" 
-        message="An error occurred. Please try again." 
-      />
-
-    </div>
+    <>
+      <Counter />
+    </>
   )
 }
 
 export default App
-
