@@ -1,4 +1,5 @@
 import './App.css'
+// import CardPreview from './components/CardPreview/CardPreview'
 // import StockBadge from './components/StockBadge/StockBadge'
 // import PlanCard from './components/PlanCard/PlanCard'
 // import Notification from "./components/Notificacion/Notificacion"
@@ -39,14 +40,44 @@ import './App.css'
 
 
 
-import Counter from './components/Counter/Counter'
+// import Counter from './components/Counter/Counter'
 
+
+// function App() {
+
+//   return (
+//     <>
+//       <Counter />
+
+//     </>
+//   )
+// }
+
+// export default App
+
+// import CardPreview from './components/CardPreview/CardPreview'
+
+
+// function App() {
+
+//   return (
+//     <>
+//       <CardPreview/>
+      
+//     </>
+//   )
+// }
+
+// export default App
+
+
+import Interruptor from './components/Interruptor/Interruptor'
 
 function App() {
 
   return (
     <>
-      <Counter />
+      <Interruptor />
     </>
   )
 }
